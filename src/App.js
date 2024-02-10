@@ -77,6 +77,7 @@ function App() {
       {user && (
         <Sidebar handleLogout={handleLogout}>
           <Routes>
+            <Route path="/" element={<Dashboard />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/messenger" element={<Messenger />} />
             <Route path="/fb-pages" element={<FbPages />} />
