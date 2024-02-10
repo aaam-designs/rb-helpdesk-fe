@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // const baseURL = "https://5747-103-41-37-6.ngrok-free.app/api/v1";
-const baseURL = "http://localhost:4000/api/v1";
+const baseURL = "https://rp-helpdesk-e00f3381e623.herokuapp.com/api/v1";
 
 const register = async (user) => {
   const userData = await axios.post(`${baseURL}/auth/register`, user);
