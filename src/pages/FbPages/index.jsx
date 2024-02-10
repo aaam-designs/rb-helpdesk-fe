@@ -30,22 +30,21 @@ const FbPages = () => {
             pages.lenth > 0 &&
             pages.map((page) => {
               return ( */}
-          {pages &&
-            pages.id(
-              <Link
-                style={{
-                  textDecoration: "none",
-                  color: "#fff",
-                  background: "#183b70",
-                  padding: "10px",
-                  borderRadius: "5px",
-                  margin: "10px",
-                }}
-                to={`/messenger?page=${pages.id}`}
-              >
-                {pages.pageName}
-              </Link>
-            )}
+          {pages && pages.id && (
+            <Link
+              style={{
+                textDecoration: "none",
+                color: "#fff",
+                background: "#183b70",
+                padding: "10px",
+                borderRadius: "5px",
+                margin: "10px",
+              }}
+              to={`/messenger?page=${pages.id}`}
+            >
+              {pages.pageName}
+            </Link>
+          )}
           {/* );
             })} */}
         </div>
