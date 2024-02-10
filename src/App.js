@@ -24,7 +24,7 @@ function App() {
       if (user) {
         localStorage.setItem("role", user.role);
         if (user.fbUserAccessToken)
-          localStorage.setItem("fbUserAccessToken", user.fbUserAccessToken);
+          localStorage.setItem("fbAccessToken", user.fbUserAccessToken);
         if (user.role === "client") {
           localStorage.setItem("clientId", user.user.roleData.client._id);
         } else if (user.role === "agent") {
@@ -50,7 +50,7 @@ function App() {
       localStorage.removeItem("token");
       localStorage.removeItem("agentId");
       localStorage.removeItem("clientId");
-      localStorage.removeItem("fbUserAccessToken");
+      localStorage.removeItem("fbAccessToken");
       localStorage.removeItem("role");
       navigate("/login");
     }
