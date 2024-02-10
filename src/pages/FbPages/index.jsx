@@ -26,25 +26,25 @@ const FbPages = () => {
         <div className="form-container">
           <h4>Select a page</h4>
           <br />
-          {pages &&
+          {/* {pages &&
             pages.lenth > 0 &&
             pages.map((page) => {
-              return (
-                <Link
-                  style={{
-                    textDecoration: "none",
-                    color: "#fff",
-                    background: "#183b70",
-                    padding: "10px",
-                    borderRadius: "5px",
-                    margin: "10px",
-                  }}
-                  to={`/messenger?page=${page.id}`}
-                >
-                  {page.name}
-                </Link>
-              );
-            })}
+              return ( */}
+          <Link
+            style={{
+              textDecoration: "none",
+              color: "#fff",
+              background: "#183b70",
+              padding: "10px",
+              borderRadius: "5px",
+              margin: "10px",
+            }}
+            to={`/messenger?page=${pages.id}`}
+          >
+            {pages.name}
+          </Link>
+          {/* );
+            })} */}
         </div>
       </div>
     );
