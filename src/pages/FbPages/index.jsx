@@ -6,6 +6,8 @@ import { getPages } from "../../services/messenger";
 
 const FbPages = () => {
   const [pages, setPages] = useState();
+  const token = localStorage.getItem("token");
+  console.log("sssstoken: sknjknjknj: ", token);
 
   async function getFbPages() {
     const token = localStorage.getItem("token");
