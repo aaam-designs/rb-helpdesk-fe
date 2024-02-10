@@ -41,7 +41,7 @@ const FbPages = () => {
             }}
             to={`/messenger?page=${pages.id}`}
           >
-            {pages.name}
+            {pages.pageName}
           </Link>
           {/* );
             })} */}
