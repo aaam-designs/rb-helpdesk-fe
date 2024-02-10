@@ -10,7 +10,10 @@ import {
 } from "../../services/messenger";
 
 const ProfileContainer = ({ customerId }) => {
-  const [customer, setCustomer] = useState();
+  const [customer, setCustomer] = useState({
+    first_name: "Akshit",
+    last_name: "Bhatia",
+  });
 
   async function getCustomerData() {
     const token = localStorage.getItem("token");
@@ -28,7 +31,7 @@ const ProfileContainer = ({ customerId }) => {
         <div className="bg-white py-5">
           <div>
             <img
-              src={`${customer.profile_pic}`}
+              src={customer.profile_pic ? `${customer.profile_pic}` : pic}
               width="80px"
               style={{ borderRadius: "50%", background: "red" }}
             />
@@ -70,8 +73,6 @@ const ProfileContainer = ({ customerId }) => {
         </div>
       </div>
     );
-  } else {
-    return <div>sasa</div>;
   }
 };
 
