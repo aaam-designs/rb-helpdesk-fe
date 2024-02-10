@@ -31,10 +31,14 @@ export default function FBInit({ isConnected, handleFb }) {
           "fbAccessToken",
           response.authResponse.accessToken
         );
-        connectToFb({
-          fbUserId: response.authResponse.userID,
-          fbAccessToken: response.authResponse.accessToken,
-        });
+        const token = localStorage.getItem("token");
+        connectToFb(
+          {
+            fbUserId: response.authResponse.userID,
+            fbAccessToken: response.authResponse.accessToken,
+          },
+          token
+        );
         handleFb(true);
         console.log("Person is connected");
       } else {

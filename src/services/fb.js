@@ -32,10 +32,4 @@ const disconnectToFb = async (data) => {
   return connection.data;
 };
 
-export {
-  getMessenger,
-  getConversation,
-  getCustomer,
-  connectToFb,
-  disconnectToFb,
-};
+export { getMessenger, getConversation, getCustomer };

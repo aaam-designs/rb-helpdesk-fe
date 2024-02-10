@@ -22,12 +22,22 @@ const getCustomer = async (customerId) => {
   return customer.data.customer;
 };
 
-const connectToFb = async (data) => {
+const connectToFb = async (data, token) => {
+  const config = {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  };
   const connection = await axios.post(`${baseURL}/fb/connect`, data, config);
   return connection.data;
 };
 
-const disconnectToFb = async (data) => {
+const disconnectToFb = async (data, token) => {
+  const config = {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  };
   const connection = await axios.post(`${baseURL}/fb/disconnect`, data, config);
   return connection.data;
 };
