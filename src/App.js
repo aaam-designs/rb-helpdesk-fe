@@ -39,7 +39,7 @@ function App() {
   }
 
   async function handleLogin() {
-    handleUserInteraction();
+    await handleUserInteraction();
     navigate("/dashboard");
   }
 
