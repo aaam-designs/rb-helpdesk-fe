@@ -8,8 +8,8 @@ const FbPages = () => {
   const [pages, setPages] = useState();
 
   async function getFbPages() {
-    const fbPages = await getPages();
-    console.log("sdnjkds", fbPages);
+    const token = localStorage.getItem("token");
+    const fbPages = await getPages(token);
     setPages(fbPages.pages);
   }
 

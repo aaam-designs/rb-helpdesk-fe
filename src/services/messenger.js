@@ -32,7 +32,12 @@ const disconnectToFb = async (data) => {
   return connection.data;
 };
 
-const getPages = async () => {
+const getPages = async (token) => {
+  const config = {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  };
   const pages = await axios.get(`${baseURL}/fb/pages`, config);
   return pages.data;
 };
