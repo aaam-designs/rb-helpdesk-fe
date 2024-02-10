@@ -1,0 +1,67 @@
+.profile-container {
+  height: 100vh;
+  /* overflow-y: auto; */
+  overflow: scroll;
+  padding: 0; /* Set the color of the scrollbar */
+  margin-right: 0px;
+  text-align: center;
+}
+
+.name-heading {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.active-status-text {
+  font-size: 16px;
+  color: #515151;
+  margin: 0px;
+  font-weight: lighter;
+}
+
+.profile-cta {
+  text-decoration: none;
+  color: black;
+  background-color: #fcfcfc;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin: 20px 5px;
+  border: 1px solid #a2a2a2;
+}
+
+.customer-details-container {
+  margin: 10px 0px;
+  padding: 10px 5px;
+  width: 90%;
+  background: white;
+  border-radius: 10px;
+}
+
+.customer-heading {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-align: left;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0px;
+}
+
+.label-text {
+  font-size: 16px;
+  color: #222222;
+  margin: 0px;
+  font-weight: normal;
+}
+
+.value-text {
+  font-size: 16px;
+  color: #000000;
+  margin: 0px;
+  font-weight: bold;
+}

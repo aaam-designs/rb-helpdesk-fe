@@ -1,0 +1,13 @@
+.inbox-container {
+  height: 100vh;
+  /* overflow-y: auto; */
+  overflow: scroll;
+  padding: 0; /* Set the color of the scrollbar */
+  margin-right: 0px;
+}
+
+.inbox-heading {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 0px 20px;
+}

@@ -1,0 +1,62 @@
+.card-container {
+  padding: 10px 15px;
+  /* background-color: red; */
+  margin-top: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 1px solid rgba(210, 210, 210);
+  cursor: pointer;
+}
+
+.card-container:hover {
+  background-color: rgb(230, 229, 229);
+}
+
+.unread {
+  background-color: #e9e9e9;
+}
+
+.unread:hover {
+  background-color: rgb(202, 202, 202);
+}
+
+.text-src {
+  padding: 0px 10px;
+}
+
+.username-text {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0px;
+}
+
+.timestamp-text {
+  font-size: 14px;
+  color: #2d2d2d;
+  margin: 0px;
+}
+
+.msg-src-text {
+  margin: 0px;
+  font-size: 14px;
+}
+
+.custom-text {
+  font-size: 14px;
+  margin: 0px;
+  font-weight: 600;
+}
+
+.msg-text {
+  color: #6f6f6f;
+  font-size: 14px;
+  margin: 0px;
+}
+
+.top-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* background: green; */
+  padding: 0px;
+  /* margin-bottom: 2px; */
+}
