@@ -9,6 +9,7 @@ const FbPages = () => {
 
   async function getFbPages() {
     const token = localStorage.getItem("token");
+    console.log("token: sknjknjknj: ", token);
     const fbPages = await getPages(token);
     setPages(fbPages.pages);
   }
