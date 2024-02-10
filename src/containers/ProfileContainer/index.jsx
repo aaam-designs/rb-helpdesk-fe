@@ -13,7 +13,8 @@ const ProfileContainer = ({ customerId }) => {
   const [customer, setCustomer] = useState();
 
   async function getCustomerData() {
-    const customer = await getCustomer(customerId);
+    const token = localStorage.getItem("token");
+    const customer = await getCustomer(customerId, token);
     setCustomer(customer);
   }
 
