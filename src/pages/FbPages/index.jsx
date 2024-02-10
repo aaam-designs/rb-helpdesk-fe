@@ -13,7 +13,7 @@ const FbPages = () => {
     const token = localStorage.getItem("token");
     const fbPages = await getPages(token);
     console.log("fbbbbbbb", fbPages);
-    setPages(fbPages);
+    setPages(fbPages.pages);
   }
 
   useEffect(() => {
